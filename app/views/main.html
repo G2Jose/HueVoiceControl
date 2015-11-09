@@ -1,0 +1,34 @@
+<script>
+if (annyang) {
+
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'Lights On': function() {
+      // $('#tpsreport').animate({bottom: '-100px'});
+      angular.element(document.getElementById('divid')).scope().turnOn();
+      // window.alert("sometext");
+    }, 
+    'Lights Off': function() {
+      // $('#tpsreport').animate({bottom: '-100px'});
+      angular.element(document.getElementById('divid')).scope().turnOff();
+      // window.alert("sometext");
+    }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
+
+<div id = "divid"class="vertical-center" ng-controller="MainCtrl">
+{{message}}
+  <div class="center-block">
+    <button type="button" class="btn btn-primary custom-btn-spacing" ng-click="turnOn()">Turn On </button>
+
+    <button type="button" class="btn btn-danger custom-btn-spacing" ng-click="turnOff()">Turn Off</button>
+  </div>
+
+</div>
