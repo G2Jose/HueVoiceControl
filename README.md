@@ -2,15 +2,15 @@
 ## Instructions for use
 - Ensure that you have Node.js set up
 - Install grunt-cli and bower
-	```
+	```bash
 	npm install -g grunt-cli bower
 	```
 - Install node packages
-	```
+	```bash
 	npm install && cd server && npm install
 	```
 - Run server
-	```
+	```bash
 	grunt serve
 	```
 - Navigate to http://localhost:3000
