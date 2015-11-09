@@ -10,9 +10,9 @@ npm install -g grunt-cli bower
 npm install && cd server && npm install
 ```
 - Run server
-```
-grunt serve
-```
+	```
+	grunt serve
+	```
 - Navigate to http://localhost:3000
 
 
