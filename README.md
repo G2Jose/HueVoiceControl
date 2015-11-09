@@ -1,11 +1,20 @@
-# raspberrypivoicecontrolhue
+# Voice Control for Phillips Hue
+## Instructions for use
+- Ensure that you have Node.js set up
+- Install grunt-cli and bower
+```
+npm install -g grunt-cli bower
+```
+- Install node packages
+```
+npm install && cd server && npm install
+```
+- Run server
+```
+grunt serve
+```
+- Navigate to http://localhost:3000
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.14.0.
-
-## Build & development
-
-Run `grunt` for building and `grunt serve` for preview.
 
 ## Testing
 
