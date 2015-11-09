@@ -2,13 +2,13 @@
 ## Instructions for use
 - Ensure that you have Node.js set up
 - Install grunt-cli and bower
-```
-npm install -g grunt-cli bower
-```
+	```
+	npm install -g grunt-cli bower
+	```
 - Install node packages
-```
-npm install && cd server && npm install
-```
+	```
+	npm install && cd server && npm install
+	```
 - Run server
 	```
 	grunt serve
