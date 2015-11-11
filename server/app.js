@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var https = require('https');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -96,4 +97,5 @@ if (app.get('env') === 'production') {
 
 module.exports = app;
 app.listen(port, "0.0.0.0");
+// https.createServer(app).listen(443);
 console.log("Server running on port: " + port);
